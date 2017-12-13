@@ -10,3 +10,5 @@
 # Visual studio project files
 *.pyproj
 .vs/
+/test.json
+/bitbang.sln

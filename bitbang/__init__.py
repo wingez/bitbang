@@ -1,1 +1,1 @@
-ECHO is on.
+from bitbang import Pin,shiftin,shiftout,Output,Input,MSBFirst,LSBFirst
