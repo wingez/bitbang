@@ -73,7 +73,7 @@ def getiterator(bits,mode):
     else:
         raise ValueError('mode')
 
-def shiftout(data,bits,mode,clockpin=None,datapin=None,latchpin=None,pins={}):
+def shiftout(data,bits,mode=MSBFirst,clockpin=None,datapin=None,latchpin=None,pins={}):
 
     if not clockpin:
         clockpin=pins['clock']
@@ -96,7 +96,7 @@ def shiftout(data,bits,mode,clockpin=None,datapin=None,latchpin=None,pins={}):
     latchpin.pulse()
 
 
-def shiftin(bits,mode,clockpin=None,datapin=None,latchpin=None,pins={}):
+def shiftin(bits,mode=MSBFirst,clockpin=None,datapin=None,latchpin=None,pins={}):
     
     if not clockpin:
         clockpin=pins['clock']
