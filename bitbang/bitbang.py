@@ -31,7 +31,7 @@ class GPIOError(Exception):
 class Pin(object):
     def __init__(self,pinindex,direction=Output,inverted=False):
         self.index = pinindex
-        self.direction = mode
+        self.direction = direction
         self.inverted = inverted
         
         if direction == Output:
