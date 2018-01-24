@@ -128,8 +128,8 @@ def readpinjson(json):
     pin = json['pin']
 
     direction=Output
-    if 'direction' in json:
-        direction = json['direction']
+    if 'mode' in json:
+        direction = json['mode']
         if direction=='output':
             direction=Output
         elif direction=='input':
